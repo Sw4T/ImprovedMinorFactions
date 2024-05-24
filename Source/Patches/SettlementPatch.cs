@@ -8,7 +8,7 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Library;
 using System;
 
-namespace ImprovedMinorFactions.Patches
+namespace ImprovedMinorFactionsBeta.Patches
 {
     [HarmonyPatch(typeof(Settlement))]
     [HarmonyPatch("MapFaction", MethodType.Getter)]

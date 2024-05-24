@@ -6,7 +6,7 @@ using TaleWorlds.CampaignSystem.GameComponents;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Settlements;
 
-namespace ImprovedMinorFactions.Patches
+namespace ImprovedMinorFactionsBeta.Patches
 {
     // allow minor faction lords and lords hiring minor faction as mercenary to visit MFHideouts
     [HarmonyPatch(typeof(AiVisitSettlementBehavior), "IsSettlementSuitableForVisitingCondition")]

@@ -4,7 +4,7 @@ using SandBox.CampaignBehaviors;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Encounters;
 
-namespace ImprovedMinorFactions.Patches
+namespace ImprovedMinorFactionsBeta.Patches
 {
     // makes sure MFHideout boss fights have correct dialog
     [HarmonyPatch(typeof(HideoutConversationsCampaignBehavior), "bandit_hideout_start_defender_on_condition")]

@@ -18,7 +18,7 @@ using TaleWorlds.CampaignSystem.Settlements;
 using System.Linq;
 using TaleWorlds.CampaignSystem.MapEvents;
 
-namespace ImprovedMinorFactions.Source.Quests.MFHNotableNeedsRecruits
+namespace ImprovedMinorFactionsBeta.Source.Quests.MFHNotableNeedsRecruits
 {
     // Token... comment means function has not yet been adapted to mod
     public class MFHNotableNeedsRecruitsIssueBehavior : CampaignBehaviorBase

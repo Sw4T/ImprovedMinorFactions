@@ -17,7 +17,7 @@ using TaleWorlds.CampaignSystem.ViewModelCollection.Party;
 using TaleWorlds.CampaignSystem.Encounters;
 using static TaleWorlds.CampaignSystem.Issues.ScoutEnemyGarrisonsIssueBehavior;
 
-namespace ImprovedMinorFactions.Source.Quests.MFHLordNeedsRecruits
+namespace ImprovedMinorFactionsBeta.Source.Quests.MFHLordNeedsRecruits
 {
     // Token... comment means function has not yet been adapted to mod
     public class MFHLordNeedsRecruitsIssueBehavior : CampaignBehaviorBase

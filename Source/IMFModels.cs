@@ -8,7 +8,7 @@ using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace ImprovedMinorFactions
+namespace ImprovedMinorFactionsBeta
 {
     internal static class IMFModels
     {

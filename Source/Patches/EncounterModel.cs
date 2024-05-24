@@ -14,7 +14,7 @@ using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.CampaignSystem.Siege;
 using TaleWorlds.Core;
 
-namespace ImprovedMinorFactions.Source.Patches
+namespace ImprovedMinorFactionsBeta.Source.Patches
 {
     internal class IMFEncounterModel : EncounterModel
     {

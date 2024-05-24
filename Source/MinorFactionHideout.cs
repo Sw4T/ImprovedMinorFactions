@@ -15,7 +15,7 @@ using TaleWorlds.CampaignSystem.Roster;
 using TaleWorlds.CampaignSystem.Encounters;
 using TaleWorlds.CampaignSystem.GameMenus;
 
-namespace ImprovedMinorFactions
+namespace ImprovedMinorFactionsBeta
 {
 
     public class MFHideoutTypeDefiner : SaveableTypeDefiner

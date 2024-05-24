@@ -8,7 +8,7 @@ using TaleWorlds.CampaignSystem.ViewModelCollection;
 using TaleWorlds.Core;
 using TaleWorlds.Core.ViewModelCollection.Information;
 
-namespace ImprovedMinorFactions
+namespace ImprovedMinorFactionsBeta
 {
     public static class Helpers
     {

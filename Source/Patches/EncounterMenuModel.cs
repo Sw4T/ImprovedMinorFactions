@@ -4,7 +4,7 @@ using TaleWorlds.CampaignSystem.GameComponents;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Settlements;
 
-namespace ImprovedMinorFactions.Patches
+namespace ImprovedMinorFactionsBeta.Patches
 {
     internal class IMFEncounterGameMenuModel : EncounterGameMenuModel
     {

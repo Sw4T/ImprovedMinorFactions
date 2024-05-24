@@ -12,7 +12,7 @@ using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Core;
 using TaleWorlds.Localization;
 
-namespace ImprovedMinorFactions.Patches
+namespace ImprovedMinorFactionsBeta.Patches
 {
     [HarmonyPatch(typeof(PlayerEncounter), "CreateLocationEncounter")]
     public class CreateLocationEncounterPatch

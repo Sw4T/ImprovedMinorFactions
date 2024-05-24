@@ -8,7 +8,7 @@ using TaleWorlds.CampaignSystem.CampaignBehaviors;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 
-namespace ImprovedMinorFactions.Source.Patches
+namespace ImprovedMinorFactionsBeta.Source.Patches
 {
     // fix Bannerlord bug that causes Forest People clan to not be at war with Sturgia due to their Vakken culture
     [HarmonyPatch(typeof(OutlawClansCampaignBehavior), "MakeOutlawFactionsEnemyToKingdomFactions")]

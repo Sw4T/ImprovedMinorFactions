@@ -8,7 +8,7 @@ using TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay;
 using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.Localization;
 
-namespace ImprovedMinorFactions.Patches
+namespace ImprovedMinorFactionsBeta.Patches
 {
     // Tooltip crash preventer
     [HarmonyPatch(typeof(CampaignUIHelper), "GetVillageMilitiaTooltip")]

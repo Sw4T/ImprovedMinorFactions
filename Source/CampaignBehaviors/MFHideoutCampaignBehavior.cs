@@ -17,7 +17,7 @@ using TaleWorlds.Localization;
 using MathF = TaleWorlds.Library.MathF;
 using Options = TaleWorlds.CampaignSystem.GameMenus.GameMenuOption;
 
-namespace ImprovedMinorFactions.Source.CampaignBehaviors
+namespace ImprovedMinorFactionsBeta.Source.CampaignBehaviors
 {
     internal class MFHideoutCampaignBehavior : CampaignBehaviorBase
     {

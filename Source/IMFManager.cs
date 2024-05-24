@@ -13,7 +13,7 @@ using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.ObjectSystem;
 
-namespace ImprovedMinorFactions
+namespace ImprovedMinorFactionsBeta
 {
     internal class MFData : MBObjectBase
     {

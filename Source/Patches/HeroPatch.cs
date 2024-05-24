@@ -7,7 +7,7 @@ using HarmonyLib;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.CampaignSystem;
 
-namespace ImprovedMinorFactions.Source.Patches
+namespace ImprovedMinorFactionsBeta.Source.Patches
 {
     // patch to prevent crashes from assumption about Gang Leaders living in Towns. Use Helpers.IsMFGangLeader instead.
     [HarmonyPatch(typeof(Hero), "get_IsGangLeader")]

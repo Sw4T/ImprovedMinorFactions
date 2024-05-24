@@ -12,7 +12,7 @@ using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.CampaignSystem.Settlements.Workshops;
 using TaleWorlds.Localization;
 
-namespace ImprovedMinorFactions.Source.Patches
+namespace ImprovedMinorFactionsBeta.Source.Patches
 {
     // gives MF Clans income from their hideouts
     // TODO: attach model

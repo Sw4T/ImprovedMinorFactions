@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Helpers;
-using ImprovedMinorFactions.Source.CampaignBehaviors;
+using ImprovedMinorFactionsBeta.Source.CampaignBehaviors;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
 using TaleWorlds.CampaignSystem.CharacterDevelopment;
@@ -18,7 +18,7 @@ using TaleWorlds.Localization;
 using TaleWorlds.SaveSystem;
 using MathF = TaleWorlds.Library.MathF;
 
-namespace ImprovedMinorFactions.Source.Quests.NearbyHideout
+namespace ImprovedMinorFactionsBeta.Source.Quests.NearbyHideout
 {
     public class NearbyMFHideoutIssueBehavior : CampaignBehaviorBase
     {

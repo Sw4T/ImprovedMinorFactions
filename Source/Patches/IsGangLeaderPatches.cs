@@ -13,7 +13,7 @@ using TaleWorlds.CampaignSystem.ViewModelCollection.CharacterDeveloper;
 using TaleWorlds.Core;
 using TaleWorlds.Localization;
 
-namespace ImprovedMinorFactions.Source.Patches
+namespace ImprovedMinorFactionsBeta.Source.Patches
 {
     [HarmonyPatch(typeof(CharacterHelper), "GetNonconversationFacialIdle")]
     public class NonConversationFacialIdlePatch

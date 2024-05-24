@@ -9,7 +9,7 @@ using TaleWorlds.Library;
 using MathF = TaleWorlds.Library.MathF;
 using TaleWorlds.CampaignSystem.Settlements;
 
-namespace ImprovedMinorFactions.Source.Patches
+namespace ImprovedMinorFactionsBeta.Source.Patches
 {
     // allows MFHideout notables to have quests by adding MFHideouts to list of settlements with notables
     [HarmonyPatch(typeof(IssuesCampaignBehavior), "OnSessionLaunched")]

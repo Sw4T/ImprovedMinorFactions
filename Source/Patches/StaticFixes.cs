@@ -2,7 +2,7 @@
 using HarmonyLib;
 using TaleWorlds.Core;
 
-namespace ImprovedMinorFactions.Patches
+namespace ImprovedMinorFactionsBeta.Patches
 {
     // taken from Bannerlord Co-op mod to prevent gametext crashes with some patches
     [HarmonyPatchCategory("HarmonyStaticFixes")]

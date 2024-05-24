@@ -2,14 +2,14 @@
 using System;
 using System.Linq;
 using HarmonyLib;
-using ImprovedMinorFactions.Patches;
-using ImprovedMinorFactions.Source;
-using ImprovedMinorFactions.Source.CampaignBehaviors;
-using ImprovedMinorFactions.Source.Patches;
-using ImprovedMinorFactions.Source.Quests.MFHLordNeedsRecruits;
-using ImprovedMinorFactions.Source.Quests.MFHNotableNeedsRecruits;
-using ImprovedMinorFactions.Source.Quests.MFHNotableNeedsTroopsTrained;
-using ImprovedMinorFactions.Source.Quests.NearbyHideout;
+using ImprovedMinorFactionsBeta.Patches;
+using ImprovedMinorFactionsBeta.Source;
+using ImprovedMinorFactionsBeta.Source.CampaignBehaviors;
+using ImprovedMinorFactionsBeta.Source.Patches;
+using ImprovedMinorFactionsBeta.Source.Quests.MFHLordNeedsRecruits;
+using ImprovedMinorFactionsBeta.Source.Quests.MFHNotableNeedsRecruits;
+using ImprovedMinorFactionsBeta.Source.Quests.MFHNotableNeedsTroopsTrained;
+using ImprovedMinorFactionsBeta.Source.Quests.NearbyHideout;
 using StoryMode;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.ComponentInterfaces;
@@ -20,7 +20,7 @@ using TaleWorlds.MountAndBlade;
 using TaleWorlds.ObjectSystem;
 
 
-namespace ImprovedMinorFactions
+namespace ImprovedMinorFactionsBeta
 {
 
     public class SubModule : MBSubModuleBase
@@ -28,10 +28,10 @@ namespace ImprovedMinorFactions
         protected override void OnSubModuleLoad()
         {
             base.OnSubModuleLoad();
-            if (Harmony.HasAnyPatches("ImprovedMinorFactions")) return;
+            if (Harmony.HasAnyPatches("ImprovedMinorFactionsBeta")) return;
             var assembly = typeof(SubModule).Assembly;
 
-            Harmony harmony = new Harmony("ImprovedMinorFactions");
+            Harmony harmony = new Harmony("ImprovedMinorFactionsBeta");
             harmony.PatchCategory(assembly, "HarmonyStaticFixes"); // run this before other patches
             harmony.PatchAllUncategorized(assembly);        
         }
@@ -56,7 +56,7 @@ namespace ImprovedMinorFactions
                 return;
             }
             starter.AddBehavior(new MFHideoutCampaignBehavior());
-            starter.AddBehavior(new MFHNotablesCampaignBehavior());
+            starter.AddBehavior(new SectMFs());
             starter.AddBehavior(new MFHNotableNeedsRecruitsIssueBehavior());
             starter.AddBehavior(new MFHNotableNeedsTroopsTrainedIssueBehavior());
             starter.AddBehavior(new MFHLordNeedsRecruitsIssueBehavior());

@@ -19,7 +19,7 @@ using TaleWorlds.CampaignSystem.MapEvents;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Library;
 
-namespace ImprovedMinorFactions.Source.Quests.MFHNotableNeedsTroopsTrained
+namespace ImprovedMinorFactionsBeta.Source.Quests.MFHNotableNeedsTroopsTrained
 {
     // Token... comment means function has not yet been adapted to mod
     public class MFHNotableNeedsTroopsTrainedIssueBehavior : CampaignBehaviorBase

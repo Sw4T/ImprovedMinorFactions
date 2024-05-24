@@ -3,7 +3,7 @@ using HarmonyLib;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Settlements;
 
-namespace ImprovedMinorFactions.Patches
+namespace ImprovedMinorFactionsBeta.Patches
 {
     // make ShowHideouts cheat also show MFHideouts
     [HarmonyPatch(typeof(CampaignCheats), "ShowHideouts")]

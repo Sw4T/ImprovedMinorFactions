@@ -10,7 +10,7 @@ using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
 
-namespace ImprovedMinorFactions.Patches
+namespace ImprovedMinorFactionsBeta.Patches
 {
     // adds nameplates for MFHideouts
     [HarmonyPatch(typeof(SettlementNameplatesVM), "Initialize")]

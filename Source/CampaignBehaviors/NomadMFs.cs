@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Settlements;
 
-namespace ImprovedMinorFactions.Source.CampaignBehaviors
+namespace ImprovedMinorFactionsBeta.Source.CampaignBehaviors
 {
     internal class NomadMFsCampaignBehavior : CampaignBehaviorBase
     {

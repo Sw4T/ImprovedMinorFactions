@@ -14,7 +14,7 @@ using TaleWorlds.CampaignSystem.AgentOrigins;
 using TaleWorlds.Core;
 using TaleWorlds.CampaignSystem.ViewModelCollection.CharacterDeveloper;
 
-namespace ImprovedMinorFactions.Source.CampaignBehaviors
+namespace ImprovedMinorFactionsBeta.Source.CampaignBehaviors
 {
     internal class MFHNotablesCampaignBehavior : CampaignBehaviorBase
     {
@@ -32,9 +32,10 @@ namespace ImprovedMinorFactions.Source.CampaignBehaviors
 
         private void OnTroopRecruited(Hero recruiterHero, Settlement settlement, Hero troopSource, CharacterObject troop, int amount)
         {
+            if (recruiterHero != null && troopSource != null)
+                InformationManager.DisplayMessage(new InformationMessage($"{recruiterHero.Name} just recruited {amount} of {troopSource.Name} in {settlement.Name}"));
             if (!Helpers.IsMFHideout(settlement))
-                return;
-            //InformationManager.DisplayMessage(new InformationMessage($"{amount} troops recruited by {recruiterHero}"));
+                return;  
         }
 
         private void AddMFHLocationCharacters(Settlement settlement)

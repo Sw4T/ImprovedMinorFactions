@@ -1,7 +1,7 @@
 ﻿using TaleWorlds.CampaignSystem.Encounters;
 using TaleWorlds.CampaignSystem.Settlements;
 
-namespace ImprovedMinorFactions
+namespace ImprovedMinorFactionsBeta
 {
     // Not sure why this is needed but it is
     internal class MFHEncounter : LocationEncounter

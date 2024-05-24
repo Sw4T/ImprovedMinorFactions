@@ -2,7 +2,7 @@
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.CampaignSystem;
 
-namespace ImprovedMinorFactions.Source.Patches
+namespace ImprovedMinorFactionsBeta.Source.Patches
 {
     [HarmonyPatch(typeof(Campaign), "DailyTickSettlement")]
     public class CampaignSettlementTickPatch
