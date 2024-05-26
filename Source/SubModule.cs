@@ -56,12 +56,13 @@ namespace ImprovedMinorFactionsBeta
                 return;
             }
             starter.AddBehavior(new MFHideoutCampaignBehavior());
-            starter.AddBehavior(new SectMFs());
+            starter.AddBehavior(new MFHNotablesCampaignBehavior());
             starter.AddBehavior(new MFHNotableNeedsRecruitsIssueBehavior());
             starter.AddBehavior(new MFHNotableNeedsTroopsTrainedIssueBehavior());
             starter.AddBehavior(new MFHLordNeedsRecruitsIssueBehavior());
             starter.AddBehavior(new NearbyMFHideoutIssueBehavior());
             starter.AddBehavior(new NomadMFsCampaignBehavior());
+            starter.AddBehavior(new SectMFsCampaignBehavior());
 
             var clanFinanceModel = GetGameModel<ClanFinanceModel>(starter);
             if (clanFinanceModel is null)

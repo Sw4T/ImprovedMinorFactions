@@ -32,8 +32,6 @@ namespace ImprovedMinorFactionsBeta.Source.CampaignBehaviors
 
         private void OnTroopRecruited(Hero recruiterHero, Settlement settlement, Hero troopSource, CharacterObject troop, int amount)
         {
-            if (recruiterHero != null && troopSource != null)
-                InformationManager.DisplayMessage(new InformationMessage($"{recruiterHero.Name} just recruited {amount} of {troopSource.Name} in {settlement.Name}"));
             if (!Helpers.IsMFHideout(settlement))
                 return;  
         }

@@ -16,29 +16,46 @@ using TaleWorlds.CampaignSystem.ViewModelCollection.CharacterDeveloper;
 
 namespace ImprovedMinorFactionsBeta.Source.CampaignBehaviors
 {
-    internal class SectMFs : CampaignBehaviorBase
+    internal class SectMFsCampaignBehavior : CampaignBehaviorBase
     {
         public override void RegisterEvents()
         {
-            CampaignEvents.SettlementEntered.AddNonSerializedListener(this, new Action<MobileParty, Settlement, Hero>(OnSettlementEntered));
-            CampaignEvents.OnGameLoadFinishedEvent.AddNonSerializedListener(this, new Action(OnGameLoadFinished));
+            CampaignEvents.DailyTickSettlementEvent.AddNonSerializedListener(this, new Action<Settlement>(OnDailySettlementTick));
+            //CampaignEvents.SettlementEntered.AddNonSerializedListener(this, new Action<MobileParty, Settlement, Hero>(OnSettlementEntered));
+            //CampaignEvents.OnGameLoadFinishedEvent.AddNonSerializedListener(this, new Action(OnGameLoadFinished));
             // Location events
-            CampaignEvents.OnMissionEndedEvent.AddNonSerializedListener(this, new Action<IMission>(OnMissionEnded));
+            // CampaignEvents.OnMissionEndedEvent.AddNonSerializedListener(this, new Action<IMission>(OnMissionEnded));
 
-            // Debug listeners
-            CampaignEvents.OnTroopRecruitedEvent.AddNonSerializedListener(this, new Action<Hero, Settlement, Hero, CharacterObject, int>(OnTroopRecruited));
-            CampaignEvents.HeroKilledEvent.AddNonSerializedListener(this, new Action<Hero, Hero, KillCharacterAction.KillCharacterActionDetail, bool>(OnHeroKilled));
+            // Debug
+            InformationManager.DisplayMessage(new InformationMessage("SectMFsBehaviour initialized."));
         }
 
-        //Hello slelyukh
+        // Checking for daily trigger 
         public void OnDailySettlementTick(Settlement s)
         {
             var mfHideout = Helpers.GetMFHideout(s);
+            Clan mfClan;
             if (mfHideout == null || !mfHideout.OwnerClan.IsSect || IMFManager.Current.IsFullHideoutOccupationMF(mfHideout.OwnerClan))
                 return;
+            else if (mfHideout.OwnerClan != null)
+                mfClan = mfHideout.OwnerClan;
+            else
+                throw new Exception("SectMFs Exception : no clan has been found for this MFH");
+
+            // Checking the average delay and randomizing the spawn inquisitor party event
+            InformationManager.DisplayMessage(new InformationMessage($"{mfClan.Name} has a strength of {mfClan.TotalStrength} and an influence of {mfClan.Influence}"));
+            // Checking the MF Strength and influence to create the party
+
+            // Spawning the party with a raid behaviour 
+
         }
 
         public override void SyncData(IDataStore dataStore)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SpawnInquisitorParty(Settlement s)
         {
             throw new NotImplementedException();
         }
